@@ -36,4 +36,11 @@ plt.yscale
 plt.axis('tight')
 plt.show()
 ```
+
+https://www.codewars.com/kata/5390bac347d09b7da40006f6
+```javascript
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map((item) => item.charAt(0).toUpperCase() + item.slice(1)).join(' ');
+};
+```
 ## Languages:
