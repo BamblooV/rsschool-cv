@@ -14,4 +14,26 @@ I came to the courses to gain new knowledge and close the gaps in education. I h
 * Python (basics)
 * NodeJs (a bit)
 ## Code example:
+The university had a task to calculate the phase of the oscillatory unit
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+tick = 8
+numberOfDecade = 6
+x = np.geomspace(0.001, 100, num=(tick + (tick-1)*(numberOfDecade-2)))
+
+T = 2
+eps = 0.5
+koleb = np.empty(shape=(1, len(x)))
+koleb = [-np.arctan((2 * T * eps * val)/(1 - T**2 * val**2))  * 180 / np.pi if val <= 1/T else (-np.pi - np.arctan((2 * T * eps * val)/(1 - T**2 * val**2)))  * 180 / np.pi for val in x]
+koleb = np.asarray(koleb)
+
+plt.plot(x, koleb)
+plt.xscale('log')
+plt.yscale
+plt.axis('tight')
+plt.show()
+```
 ## Languages:
