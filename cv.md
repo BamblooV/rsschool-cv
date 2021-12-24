@@ -43,3 +43,7 @@ String.prototype.toJadenCase = function () {
 };
 ```
 ## Languages:
+* Russian: native
+* English: intermediate (https://www.efset.org/)
+
+ ![English scores](./scoresEnglish.png)
