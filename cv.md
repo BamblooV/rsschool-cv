@@ -32,7 +32,6 @@ koleb = np.asarray(koleb)
 
 plt.plot(x, koleb)
 plt.xscale('log')
-plt.yscale
 plt.axis('tight')
 plt.show()
 ```
