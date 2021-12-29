@@ -1,1 +1,1 @@
-# rsschool-cv
+https://BamblooV.github.io/rsschool-cv/cv
