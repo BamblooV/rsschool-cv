@@ -46,4 +46,4 @@ String.prototype.toJadenCase = function () {
 * Russian: native
 * English: intermediate (https://www.efset.org/)
 
- ![English scores](./scoresEnglish.png)
+ ![English scores](./images/scoresEnglish.png)

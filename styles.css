@@ -1,0 +1,185 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: #db5326;
+  border: 1px solid black;
+  height: 70px;
+  position: relative;
+  top: -51px;
+  transition: all 0.2s ease;
+  margin-bottom: 30px;
+}
+.header:hover {
+  top: 0px;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.navigation__button {
+  background-color: #e48826;
+  border-radius: 4px;
+  margin: 10px 10px 0px ;
+  flex: 0 1 100px;
+  height: 100%;
+}
+.button {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  transition: all 0.1s linear;
+}
+.button:hover {
+  box-shadow: 5px 5px 5px red;
+}
+.main {
+  display: flex;
+  margin: 0 auto;
+  width: 90vw;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .main {
+    width: 100vw;
+  }
+}
+.sidebar {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 40px;
+}
+.container {
+  flex: 0 1 auto;
+  margin-bottom: 40px;
+}
+.photo {
+  margin: 10px auto;
+  height: 380px;
+}
+.information {
+  flex: 0 1 60%;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-family: Oswald sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.name::after {
+  display: block;
+  margin: 10px 0px 10px 15px;
+  content: "";
+  border: 1.5px solid #db5326;
+  background-color: #db5326;
+  width: 40px;
+}
+.profession {
+  font-family: Oswald sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.title {
+  font-family: Oswald sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.text {
+  font-family: Oswald sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 80%;
+  color: #000;
+}
+.list {
+  margin-left: 20px;
+}
+.list__item {
+  list-style-type: square;
+}
+.footer {
+  display: flex;
+  height: 60px;
+  background-color: #db5326;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+.svg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 60px;
+  transition: all .3s ease;
+}
+.git {
+  background-image: url("./images/Git-icon-black.svg");
+}
+.time {
+  align-self: center;
+}
+.rs {
+  background-image: url("./images/logo-rs.svg");
+}
+.footer_button {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
