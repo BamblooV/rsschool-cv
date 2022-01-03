@@ -81,7 +81,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   box-shadow: 5px 5px 5px red;
 }
 .main {
-  border: 1px solid rgb(199, 106, 106);
   display: flex;
   margin: 0 auto;
   width: 90vw;
@@ -93,7 +92,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   }
 }
 .sidebar {
-  border: 1px solid #000;
   flex: 0 1 40%;
   display: flex;
   flex-direction: column;
@@ -113,7 +111,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   height: 380px;
 }
 .information {
-  border: 1px solid #000;
   flex: 0 1 60%;
   display: flex;
   flex-direction: column;
@@ -155,4 +152,32 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .list__item {
   list-style-type: square;
+}
+.footer {
+  display: flex;
+  height: 60px;
+  background-color: #db5326;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+.svg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 60px;
+  transition: all .3s ease;
+}
+.git {
+  background-image: url("./images/Git-icon-black.svg");
+}
+.time {
+  align-self: center;
+}
+.rs {
+  background-image: url("./images/logo-rs.svg");
+}
+.footer_button {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
