@@ -38,6 +38,8 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
 .header {
   background-color: #db5326;
   border: 1px solid black;
@@ -45,6 +47,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   position: relative;
   top: -51px;
   transition: all 0.2s ease;
+  margin-bottom: 30px;
 }
 .header:hover {
   top: 0px;
@@ -76,4 +79,80 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .button:hover {
   box-shadow: 5px 5px 5px red;
+}
+.main {
+  border: 1px solid rgb(199, 106, 106);
+  display: flex;
+  margin: 0 auto;
+  width: 90vw;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .main {
+    width: 100vw;
+  }
+}
+.sidebar {
+  border: 1px solid #000;
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 40px;
+}
+.container {
+  flex: 0 1 auto;
+  margin-bottom: 40px;
+}
+.photo {
+  margin: 10px auto;
+  height: 380px;
+}
+.information {
+  border: 1px solid #000;
+  flex: 0 1 60%;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-family: Oswald sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.name::after {
+  display: block;
+  margin: 10px 0px 10px 15px;
+  content: "";
+  border: 1.5px solid #db5326;
+  background-color: #db5326;
+  width: 40px;
+}
+.profession {
+  font-family: Oswald sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.title {
+  font-family: Oswald sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.text {
+  font-family: Oswald sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 80%;
+  color: #000;
+}
+.list {
+  margin-left: 20px;
+}
+.list__item {
+  list-style-type: square;
 }

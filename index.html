@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
@@ -21,7 +21,84 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <aside class="sidebar">
+        <img src="./images/profile_img.jpg" alt="photo" class="photo" />
+        <div class="wrapper">
+          <div class="container">
+            <h2 class="title">Contacts</h2>
+            <ul class="list">
+              <li class="list__item text">Telegram: <a href="https://t.me/Bambloo" class="text">https://t.me/Bambloo</a></li>
+              <li class="list__item text">Discord: Bambloo#5673</li>
+              <li class="list__item text">E-mail: <a href="mailto:gavrilenkoivt@gmail.com" class="text">gavrilenkoivt@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <h2 class="title">Languages</h2>
+            <ul class="list">
+              <li class="list__item text">English: Intermediate</li>
+              <li class="list__item text">Russian: Native</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <div class="information">
+        <div class="container">
+          <h1 class="name">
+            Egor<br />
+            Gavrilenko
+          </h1>
+          <h2 class="profession">Junior Frontend</h2>
+        </div>
+        <div class="container">
+          <h2 class="title">About myself</h2>
+          <p class="text">
+            I came to the courses to gain new knowledge and close the gaps in
+            education. I hope to make a lot of interesting acquaintances and
+            participate in team development of applications.
+          </p>
+        </div>
+        <div class="container">
+          <h2 class="title">Education</h2>
+          <p class="text">MIET 2018 - 2022</p>
+        </div>
+        <div class="container">
+          <h2 class="title">projects</h2>
+          <ul class="list">
+            <li class="list__item">
+              <a href="https://github.com/BamblooV/rsschool-cv" class="text"
+                >https://github.com/BamblooV/rsschool-cv</a
+              >
+            </li>
+            <li class="list__item">
+              <a href="https://github.com/BamblooV/Ciphering" class="text"
+                >https://github.com/BamblooV/Ciphering</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <h2 class="title">Code example</h2>
+          <code
+            >String.prototype.toJadenCase = function () { return this.split('
+            ').map((item) => item.charAt(0).toUpperCase() +
+            item.slice(1)).join(' '); };</code
+          >
+        </div>
+        <div class="container">
+          <h2 class="title">Skills</h2>
+          <ul class="list">
+            <li class="list__item text">HTML5</li>
+            <li class="list__item text">CSS</li>
+            <li class="list__item text">JavaScript</li>
+            <li class="list__item text">NodeJs</li>
+            <li class="list__item text">Python</li>
+            <li class="list__item text">Git</li>
+            <li class="list__item text">Jest</li>
+          </ul>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
