@@ -40,6 +40,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: #db5326;
   border: 1px solid black;
@@ -51,8 +55,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .header:hover {
   top: 0px;
-}
-.navigation {
 }
 .navigation__list {
   display: flex;
